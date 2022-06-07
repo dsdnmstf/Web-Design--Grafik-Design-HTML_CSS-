@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.title {
+  font-size: 1.5rem;
+}
+.fab,
+.fas {
+  color: #9e3490;
+}
+
+/*! *********** HOME *******************/
+
+.navbar-nav .nav-item {
+  padding: 0 1rem;
+}
+
+.navbar-nav .nav-link .fas {
+  padding-right: 5px;
+}
+
+/*! *********** HOME *******************/
+
+.banner {
+  background-image: url(./img/desk-593327_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background-color: #9e3490;
+  opacity: 0.1;
+  transition: all 2s;
+}
+.banner:hover::after {
+  opacity: 0.4;
+  width: 0;
+}
+
+.banner .text {
+  box-sizing: border-box;
+  color: white;
+}
+
+.banner .text .btn {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  border: 1px solid white;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.mause a i {
+  color: white;
+}
+
+/*! *********** ABOUT ME *******************/
+
+.about-img {
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.about .social-icons a {
+  background-color: white;
+  color: #9e3490;
+  border: 1px solid rgb(39, 39, 37);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/*! *********** SERVİCES *******************/
+
+.services .container-fluid {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(39, 39, 37, 0.712);
+}
+
+.services .title {
+  color: white;
+}
+.services .title .fab {
+  color: white;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  display: block;
+  font-weight: bold;
+}
+.card h3::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #9e3490;
+  width: 3rem;
+  margin: 0.5rem auto;
+}
+
+.card i {
+  font-size: 3rem;
+}
+
+/*! *********** CUSTOMERS *******************/
+
+.customers {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(206, 205, 205);
+}
+
+.customers img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/*! *********** REFERENCES *******************/
+
+.reference {
+  text-align: center;
+}
+.reference .nav-item {
+  margin-right: 1rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+
+.reference .nav-item:hover {
+  color: white;
+  background-color: #860174;
+  border-radius: 2rem;
+}
+.reference .nav-item:hover a {
+  color: white;
+}
+
+.reference .nav-link {
+  cursor: pointer;
+  color: #860174;
+}
+
+.cards .card {
+  margin: 1rem;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+.cards .card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: rgba(49, 48, 48, 0.918);
+  opacity: 0.6;
+  transition: all 2s;
+}
+
+.cards .card:hover::after {
+  opacity: 0.8;
+  width: 0;
+}
+
+.cards .card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  border-style: none;
+}
+
+/*! *********** CONTACT *******************/
+
+.contact {
+  text-align: center;
+}
+.contact .icons a {
+  color: black;
+  transition: all;
+}
+
+.contact .icons a:hover {
+  font-weight: bold;
+  text-decoration: underline #9e3490;
+  color: #9e3490;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 1rem;
+  right: 0.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: lightgray;
+  transition: all 1s;
+  text-decoration: none;
+}
+
+.up-btn:hover {
+  background-color: #860174;
+  color: white;
+}
+.up-btn:hover i {
+  color: white;
+}
+
+/*! *********** FOOTER *******************/
+
+footer {
+  color: white;
+  font-weight: 1.5 rem;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+footer .social-icons a {
+  background-color: white;
+  border: 1px solid #9e3490;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+footer .social-icons .fab {
+  color: #9e3490;
+}
+
+.social-icons a:hover {
+  background-color: #9e3490;
+}
+
+.social-icons a:hover .fab {
+  color: white;
+}
